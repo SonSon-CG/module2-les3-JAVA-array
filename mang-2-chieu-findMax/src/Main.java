@@ -12,15 +12,15 @@ public class Main {
                 array[i][j] = sc.nextInt();
             }
         }
-        int  x = Min.
+        int  x = array[0][0];
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array[i].length; j++) {
-
+                if (array[i][j] > x) {
+                    x = array[i][j];
+                }
             }
-
         }
-
-
+        System.out.println("max la "+ x);
 
     }
 }
